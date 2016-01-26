@@ -3,18 +3,40 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
-timezone:
+title: cat /rohit
+subtitle: Maker|Coder|Learner and everything in between
+author: Rohit Shetty
+language: en-US
+email: rohitfoss00@gmail.com
+
+
+# Hexo Beautify
+beautify:
+  types:
+    - html
+    - css
+    - js
+  html:
+    'indent_inner_html': false
+    'indent_size': 2
+    'indent_with_tabs': false
+    # More Options (https://github.com/beautify-web/js-beautify/blob/master/README.md)
+  css:
+    'indent_size': 2
+    'newline_between_rules': true
+    'indent_with_tabs': false
+    # More Options (https://github.com/beautify-web/js-beautify/blob/master/README.md)
+  js:
+    'indent_size': 2
+    'indent_with_tabs': false
+    # More Options (https://github.com/beautify-web/js-beautify/blob/master/README.md)
+
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://rohitshetty.github.io/
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :year/:month/:title/
 permalink_defaults:
 
 # Directory
@@ -34,7 +56,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -63,9 +85,19 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: very-simple
+
+#feed
+feed:
+   type: atp,
+   path: atom.xml
+   limit: 20
+   hub:
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:rohitshetty/rohitshetty.github.io.git
+  branch: master
